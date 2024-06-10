@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince's Profile Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Welcome to My Profile Page !!</h1>
+            <p>This is Prince, an Upcoming Data Scientist.</p>
+        </header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Triple line icon -->
+            </div>
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+        </nav>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I'm Prince, and here's a little Info about Me, by this you can easily know about an overview about me!!</p>
+            <img src="Prince.jpg" alt="Prince's Img" width="300px"><hr>
+        </section>
+        <section id="contact">
+            <h1>Contact Information</h1>
+            <p>Let's Connect with Me!</p>
+            <p class="sm-handle"> 
+                <a href="mailto:princekumar082078@gmail.com;" target="_blank" class="icon-link email-handle"><i class="fa fa-envelope"></i>Email</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://youtube.com/@princerajsaini2713?si=NWpfgWs866Hf7yvc" target="_blank" class="icon-link yt-handle" rel="noopener noreferrer"><i class="fa fa-lg fa-youtube"></i>YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.instagram.com/prince_saini27?igsh=YzVkODRmOTdmMw==" target="_blank" class="icon-link insta-handle" rel="noopener noreferrer"><i class="fa fa-lg fa-instagram"></i>Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/prince-kumar-4a6707288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon-link linkedin-handle" rel="noopener noreferrer"><i class="fa fa-lg fa-linkedin"></i>LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            </p><hr>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <ul class="skill-list">
+                    <li class="skill">Web Development</li>
+                    <li class="skill">Photography</li>
+                    <li class="skill">Videography</li>
+                    <li class="skill">Full stack Developer</li>
+                    <li class="skill">Data Structure & Algorithm</li>
+
+                </ul>
+            </div>
+        </section><hr>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Just have a look of My Work!!</p>
+            <p><a href="project.html">Video</a></p>
+        </section><hr>
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Prince Kumar">
+                </div>
+                <div class="form-group">    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g.abcdef@123.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+                    <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Prince. Built by PriMonic.</p>
+        </footer>
+    </center>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+h1, h2 {
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+hr {
+    width: 50%;
+    margin: 20px auto; 
+    border-top: 1px solid #ccc; 
+}
+header {
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    color: #fff;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+}
+nav {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.nav-links a:hover {
+    background: #f0f2f5;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.skill-list li {
+    list-style-type: none;
+    background: #f0f2f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.skill:hover {
+    transform: scale(1.1);
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px; 
+}
+.form-group label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+form input[type="text"],
+form input[type="email"],
+form textarea, form button {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+form button {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(17, 17, 200, 1) 35%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+form button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(17, 17, 200, 1) 35%);
+}
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
